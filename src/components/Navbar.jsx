@@ -6,7 +6,7 @@ const Navbar = () => {
       <div className="flex text-white font-semibold w-full font-mono py-7 px-2 md:py-10 md:px-20 items-center justify-between ">
         <div className="left">
             <div className="h-12">
-              <img className="w-full h-full" src={'src/assets/logo.png'} alt="" />
+              <img className="w-full h-full" src={'public/assets/logo.png'} alt="" />
             </div>
         </div>
         <div className="right flex gap-5">

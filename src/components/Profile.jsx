@@ -9,7 +9,7 @@ const Profile = () => {
     <div className="text-white font-mono flex flex-col md:flex-row items-center justify-between mx-6 md:mx-20 lg:mx-40 gap-10 md:gap-20 my-10 md:my-20">
       <div className="image hover:scale-110 transition-transform duration-300 w-40 h-40 md:w-72 md:h-72 md:border border-zinc-500 rounded" >
         <img
-          src="src/assets/profile.jpeg"
+          src="public/assets/profile.jpeg"
           alt="Profile"
           className="rounded-full md:rounded-none w-full h-full object-cover"
         />

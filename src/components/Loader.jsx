@@ -13,7 +13,7 @@ const Loader = () => {
             <div className="control maximize" />
           </div>
         </div>
-        <div className="text">Loading...</div>
+        <div className="text">Fetching ...</div>
       </div>
     </StyledWrapper>
   );
