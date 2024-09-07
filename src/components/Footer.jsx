@@ -3,7 +3,7 @@ import Socials from "./Socials";
 
 const Footer = () => {
   return (
-    <div className="flex items-center justify-center my-10 ">
+    <div id="contact" className="flex items-center justify-center my-10 ">
       <div className="font-mono text-white p-4 md:p-7 flex flex-col items-center bg-zinc-800 md:w-1/2 w-full mx-2  rounded-xl">
         <div className="email mb-5 flex items-center gap-1">
           <svg

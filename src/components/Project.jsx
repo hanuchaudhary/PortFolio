@@ -2,21 +2,28 @@ import React, { useState } from "react";
 import ProjectLink from "./ProjectLink";
 import TechUsed from "./TechUsed";
 
-const Project = ({ title, image, description, isCompleted }) => {
+const Project = ({ title, image, description, isCompleted = true }) => {
   return (
     <div className="font-mono text-white">
       <div className="image ">
-        <img className="w-full" src="https://images.unsplash.com/photo-1725615357444-6123528686cf?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8" alt="" />
+        <img
+          className="w-full"
+          src="https://images.unsplash.com/photo-1725615357444-6123528686cf?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8"
+          alt=""
+        />
       </div>
       <div className="details">
         <h1 className="text-xl py-2">Project title</h1>
         <div className="isComp py-2">
-          <h2 className="bg-green-500 text-green-950 inline-block rounded-md px-1 select-none ">
-            Completed
-          </h2>
-          <h2 className="bg-yellow-500 text-yellow-950 inline-block rounded-md px-1 select-none ">
-            In-Progress
-          </h2>
+          {isCompleted ? (
+            <h2 className="bg-green-500 text-green-950 inline-block rounded-md px-1 select-none ">
+              Completed
+            </h2>
+          ) : (
+            <h2 className="bg-yellow-500 text-yellow-950 inline-block rounded-md px-1 select-none ">
+              In-Progress
+            </h2>
+          )}
         </div>
         <p className="select-none md:text-base text-sm">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sed

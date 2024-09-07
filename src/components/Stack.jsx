@@ -90,7 +90,7 @@ const Stack = () => {
       </div>
       <div className="w-full flex flex-col items-center justify-center gap-3 mt-10">
         <h1 className="text-center">list gets updated regulary....</h1>
-        <Button title={".resume"}/>
+        <Button to={"/resume"} title={".resume"}/>
       </div>
     </div>
   );

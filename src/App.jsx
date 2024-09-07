@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Page from "./components/Page";
 import Loader from "./components/Loader";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Projects from "./components/Projects";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -20,8 +22,13 @@ const App = () => {
         </div>
       ) : (
         <div>
-          <Navbar />
-          <Page />
+          <BrowserRouter>
+              <Navbar />
+              <Page />
+            <Routes>
+              <Route path="/projects" element={<Projects />} />
+            </Routes>
+          </BrowserRouter>
         </div>
       )}
     </div>
