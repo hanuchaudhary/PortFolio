@@ -23,11 +23,8 @@ const App = () => {
       ) : (
         <div>
           <BrowserRouter>
-              <Navbar />
-              <Page />
-            <Routes>
-              <Route path="/projects" element={<Projects />} />
-            </Routes>
+            <Navbar />
+            <Page />
           </BrowserRouter>
         </div>
       )}
