@@ -1,14 +1,31 @@
-import React from 'react'
-import Navbar from './components/Navbar'
-import Page from './components/Page'
+import React, { useEffect, useState } from "react";
+import Navbar from "./components/Navbar";
+import Page from "./components/Page";
+import Loader from "./components/Loader";
 
 const App = () => {
-  return (
-    <div className=''>
-      <Navbar/>
-      <Page/>
-    </div>
-  )
-}
+  const [loading, setLoading] = useState(true);
 
-export default App
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 300);
+  }, []);
+
+  return (
+    <div className="">
+      {loading ? (
+        <div className="h-screen flex items-center justify-center bg-zinc-200">
+          <Loader />
+        </div>
+      ) : (
+        <div>
+          <Navbar />
+          <Page />
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default App;

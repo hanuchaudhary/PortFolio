@@ -14,11 +14,11 @@ const Project = ({ title, image, description, isCompleted }) => {
           <h2 className="bg-green-500 text-green-950 inline-block rounded-md px-1 select-none ">
             Completed
           </h2>
-          <h2 className="bg-[#FFEF8A] text-yellow-600 inline-block rounded-md px-1 select-none ">
+          <h2 className="bg-yellow-500 text-yellow-950 inline-block rounded-md px-1 select-none ">
             In-Progress
           </h2>
         </div>
-        <p>
+        <p className="select-none md:text-base text-sm">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sed
           optio qui recusandae maxime beatae minus necessitatibus ipsum
           reiciendis vero omnis excepturi, atque quidem assumenda eos nesciunt

@@ -79,10 +79,10 @@ const svgData = [
 
 const Stack = () => {
   return (
-    <div className="font-mono text-white">
+    <div className="font-mono text-white py-5">
       <h1 className="text-center">Cool Tech Stack I Work With</h1>
-      <div className="w-full flex items-center justify-center">
-        <div className="stack mx-20 grid grid-cols-6 w-2/3 gap-4">
+      <div className="w-full flex items-center justify-center py-10">
+        <div className="stack lg:mx-20 grid grid-cols-5 mx-5 md:grid-cols-6 lg:w-2/3 md:w-[90%] gap-4">
           {svgData.map((item, index) => (
             <Teck key={index} title={item.title} path={item.path} />
           ))}

@@ -5,7 +5,7 @@ const Socials = () => {
     <div className="flex items-center gap-3">
       <a target="_blank" href="https://www.instagram.com/kush.chaudhary.1/"  className="insta hover:scale-125 transition-transform">
         <svg
-            className="hover:fill-green-500 transition-colors"
+            className="hover:fill-yellow-500 transition-colors"
           fill="#fff"
           height={30}
           width={30}
@@ -18,7 +18,7 @@ const Socials = () => {
       </a>
       <a target="_blank" href="https://x.com/KushChaudharyOg" className="x hover:scale-125 transition-transform">
         <svg
-            className="hover:fill-green-500 transition-colors"
+            className="hover:fill-yellow-500 transition-colors"
           fill="#fff"
           height={30}
           width={30}
@@ -31,7 +31,7 @@ const Socials = () => {
       </a>
       <a target="_blank" href="https://github.com/hanuchaudhary" className="github hover:scale-125 transition-transform">
         <svg
-            className="hover:fill-green-500 transition-colors"
+            className="hover:fill-yellow-500 transition-colors"
           fill="#fff"
           height={30}
           width={30}
@@ -44,7 +44,7 @@ const Socials = () => {
       </a>
       <a target="_blank" href="https://www.linkedin.com/in/kush-chaudhary-54448628a/" className="linkdin hover:scale-125 transition-transform">
         <svg
-            className="hover:fill-green-500 transition-colors"
+            className="hover:fill-yellow-500 transition-colors"
           fill="#fff"
           height={30}
           width={30}
@@ -57,7 +57,7 @@ const Socials = () => {
       </a>
       <a target="_blank" href="" className="gmail hover:scale-125 transition-transform">
         <svg
-            className="hover:fill-green-500 transition-colors"
+            className="hover:fill-yellow-500 transition-colors"
           fill="#fff"
           height={30}
           width={30}

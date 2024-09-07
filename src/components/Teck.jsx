@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
-const Teck = ({ height = 45, title, path }) => {
+const Teck = ({title, path }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   return (
@@ -24,9 +24,8 @@ const Teck = ({ height = 45, title, path }) => {
           ></span>
         </h1>
         <svg
-        className="hover:fill-green-600 transition-colors duration-300"
-          height={height}
-          width={height}
+        className="hover:fill-yellow-600 transition-colors duration-300"
+          height={45}
           fill="#777"
           role="img"
           viewBox="0 0 24 24"
@@ -39,11 +38,5 @@ const Teck = ({ height = 45, title, path }) => {
   );
 };
 
-Teck.propTypes = {
-  height: PropTypes.number.isRequired,
-  fill: PropTypes.string,
-  title: PropTypes.string.isRequired,
-  path: PropTypes.node.isRequired,
-};
 
 export default Teck;

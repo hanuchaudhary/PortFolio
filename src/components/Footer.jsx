@@ -4,7 +4,7 @@ import Socials from "./Socials";
 const Footer = () => {
   return (
     <div className="flex items-center justify-center my-10 ">
-      <div className="font-mono text-white p-7 flex flex-col items-center bg-zinc-800 w-1/2  rounded-xl">
+      <div className="font-mono text-white p-4 md:p-7 flex flex-col items-center bg-zinc-800 md:w-1/2 w-full mx-2  rounded-xl">
         <div className="email mb-5 flex items-center gap-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -265,14 +265,13 @@ const Footer = () => {
             ></path>
           </svg>
           <a
-            className="hover:underline hover:text-green-500 transition-colors duration-300"
-            // target="_blank"
+            className="hover:underline hover:text-yellow-500 transition-colors duration-300"
             href="mailto:kushchaudharyog@gmail.com"
           >
             kushchaudharyog@gmail.com
           </a>
         </div>
-        <p className="mb-4">
+        <p className="mb-4 text-sm">
           I'm actively seeking new ventures and would welcome any inquiries or
           hellos. Please don't hesitate to reach out via the links. I'm excited
           to hear from you!
