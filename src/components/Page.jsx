@@ -6,7 +6,7 @@ import Footer from './Footer'
 
 const Page = () => {
   return (
-    <div className='md:pt-20 pt-24'>
+    <div className='md:pt-20 pt-24 transition-colors duration-500 dark:bg-neutral-900 bg-neutral-100'>
         <Profile/>
         <Stack/>
         <Projects/>

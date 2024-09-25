@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full flex justify-center  relative overflow-hidden">
-      <div className="flex w-[95%] fixed top-4 dark:bg-neutral-900 bg-neutral-400 backdrop-filter dark:backdrop-blur-lg backdrop-blur-lg dark:bg-opacity-40 bg-opacity-40 dark:border-neutral-800 border-neutral-300 z-50 border-2 rounded-2xl dark:text-white font-semibold font-mono py-7 px-4 md:py-6 items-center justify-between ">
+      <div className="flex w-[95%] fixed top-4 dark:bg-neutral-900 bg-neutral-400 backdrop-filter dark:backdrop-blur-lg backdrop-blur-lg dark:bg-opacity-40 bg-opacity-40 dark:border-neutral-800 border-neutral-300 z-[100] border-2 rounded-2xl dark:text-white font-semibold font-mono py-4 px-4 items-center justify-between ">
         <div className="left">
           <motion.div
           onClick={toggleTheme}
@@ -15,10 +15,10 @@ const Navbar = () => {
             whileTap={{ scale: 0.95 }}
             animate={{ rotate: 360 }}
             transition={{ repeat: Infinity, duration: 3, ease: "linear" }}
-            className="md:h-16 h-10"
+            className="md:h-16 h-10 cursor-pointer"
           >
             {theme == "light" ? (
-              <img className="h-full w-full shadow-xl rounded-full" src="/assets/moon.png" alt="Logo" />
+              <img className="h-full w-full rounded-full" src="/assets/moon.png" alt="Logo" />
             ) : (
               <img className="w-full h-full" src="/assets/logo.png" alt="Logo" />
             )}

@@ -6,7 +6,7 @@ const Profile = () => {
     "I’m a full-stack developer passionate about building scalable and impactful websites and applications. With expertise in design, animation, and user experience, I craft seamless and dynamic interfaces that engage users while aligning with brand identities. Let's collaborate to create extraordinary digital experiences that stand out and make a difference.";
 
   return (
-    <div className="text-neutral-950 dark:text-white  font-mono flex flex-col md:flex-row items-center justify-between mx-6 md:mx-20 lg:mx-40 gap-10 md:gap-20 my-10 md:my-20">
+    <div className="dark:bg-neutral-900 text-neutral-950 dark:text-white  font-mono flex flex-col md:flex-row items-center justify-between mx-6 md:mx-20 lg:mx-40 gap-10 md:gap-20 my-10 md:my-20">
       <div className="image hover:scale-110 transition-transform duration-300 w-40 h-40 md:w-72 md:h-72 md:border border-neutral-500 rounded" >
         <img
           src="/assets/profile.jpeg"
