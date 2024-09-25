@@ -1,0 +1,20 @@
+[
+  {
+    "title": "rePay - Payment App",
+    "image": "assets/rePay.png",
+    "description": "desc",
+    "isCompleted": true,
+    "stackUsed" : ["react" , "hono" , "tailwind" , "postgres/prisma" , "cloudflare"],
+    "githubRepo" : "https://github.com/hanuchaudhary/paytm-react",
+    "deployedLink" : "https://repay-three.vercel.app/"
+  },
+  {
+    "title": "rePay - Payment App",
+    "image": "assets/rePay.png",
+    "description": "desc",
+    "isCompleted": true,
+    "stackUsed" : ["react" , "hono" , "tailwind" , "postgres/prisma" , "cloudflare"],
+    "githubRepo" : "https://github.com/hanuchaudhary/paytm-react",
+    "deployedLink" : "https://repay-three.vercel.app/"
+  }
+]

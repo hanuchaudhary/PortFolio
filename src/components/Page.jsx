@@ -6,7 +6,7 @@ import Footer from './Footer'
 
 const Page = () => {
   return (
-    <div>
+    <div className='md:pt-20 pt-24'>
         <Profile/>
         <Stack/>
         <Projects/>

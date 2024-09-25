@@ -2,7 +2,7 @@ import React from "react";
 
 const ProjectLink = ({title , href}) => {
   return (
-    <a href={href} className="select-none cursor-pointer py-2">
+    <a href={href} target="_blank" className="select-none cursor-pointer py-2">
       <h2 className="flex items-center text-yellow-500 gap-1 hover:underline hover:text-yellow-400 h-4">
         {title}{" "}
         <svg

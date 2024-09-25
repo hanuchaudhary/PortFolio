@@ -3,8 +3,8 @@ import Socials from "./Socials";
 
 const Footer = () => {
   return (
-    <div id="contact" className="flex items-center justify-center my-10 ">
-      <div className="font-mono text-white p-4 md:p-7 flex flex-col items-center bg-zinc-800 md:w-1/2 w-full mx-2  rounded-xl">
+    <div id="contact" className="flex items-center dark:text-white justify-center mt-10 ">
+      <div className="font-mono -neutral-950 dark:-white p-4 md:p-7 flex flex-col items-center md:w-1/2 w-full mx-2  rounded-xl">
         <div className="email mb-5 flex items-center gap-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -129,10 +129,10 @@ const Footer = () => {
               y2="67.184"
               fill="none"
               stroke="#472b29"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-miterlimit="10"
-              stroke-width=".75"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeMiterlimit="10"
+              strokeWidth=".75"
             ></line>
             <line
               x1="31.939"
@@ -141,10 +141,10 @@ const Footer = () => {
               y2="62.286"
               fill="none"
               stroke="#472b29"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-miterlimit="10"
-              stroke-width=".75"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeMiterlimit="10"
+              strokeWidth=".75"
             ></line>
             <line
               x1="31.939"
@@ -153,25 +153,25 @@ const Footer = () => {
               y2="56.353"
               fill="none"
               stroke="#472b29"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-miterlimit="10"
-              stroke-width=".75"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeMiterlimit="10"
+              strokeWidth=".75"
             ></line>
             <path
               fill="none"
-              stroke="#472b29"
-              stroke-linejoin="round"
-              stroke-miterlimit="10"
-              stroke-width="1.4"
+              stroke="lstrokeLinecap9"
+              strokeLinejoin="round"
+              strokeMiterlimit="10"
+              strokeWidth="1.4"
               d="M39.775,36.867v33.256	h-7.837c-1.623,0-2.939-1.316-2.939-2.939V39.265c0-2.976,2.412-5.388,5.388-5.388"
             ></path>
             <path
               fill="none"
-              stroke="#472b29"
-              stroke-linejoin="round"
-              stroke-miterlimit="10"
-              stroke-width="1.4"
+              stroke="lstrokeLinecap9"
+              strokeLinejoin="round"
+              strokeMiterlimit="10"
+              strokeWidth="1.4"
               d="M75.858,35.948	c-1.832-2.345-5.218-2.76-7.563-0.929L53,46.97l0,0L37.705,35.02c-2.345-1.832-5.731-1.416-7.563,0.929"
             ></path>
             <line
@@ -181,10 +181,10 @@ const Footer = () => {
               y2="52.318"
               fill="none"
               stroke="#472b29"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-miterlimit="10"
-              stroke-width=".75"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeMiterlimit="10"
+              strokeWidth=".75"
             ></line>
             <line
               x1="48.822"
@@ -193,10 +193,10 @@ const Footer = () => {
               y2="56.353"
               fill="none"
               stroke="#472b29"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-miterlimit="10"
-              stroke-width=".75"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeMiterlimit="10"
+              strokeWidth=".75"
             ></line>
             <line
               x1="44.985"
@@ -205,10 +205,10 @@ const Footer = () => {
               y2="52.393"
               fill="none"
               stroke="#472b29"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-miterlimit="10"
-              stroke-width=".75"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeMiterlimit="10"
+              strokeWidth=".75"
             ></line>
             <line
               x1="42.456"
@@ -217,25 +217,25 @@ const Footer = () => {
               y2="49.357"
               fill="none"
               stroke="#472b29"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-miterlimit="10"
-              stroke-width=".75"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeMiterlimit="10"
+              strokeWidth=".75"
             ></line>
             <polyline
               fill="none"
-              stroke="#472b29"
-              stroke-linejoin="round"
-              stroke-miterlimit="10"
-              stroke-width="1.4"
+              stroke="lstrokeLinecap9"
+              strokeLinejoin="round"
+              strokeMiterlimit="10"
+              strokeWidth="1.4"
               points="29.157,42.015 53,60.644 53,60.644 76.826,42.029"
             ></polyline>
             <path
               fill="none"
-              stroke="#472b29"
-              stroke-linejoin="round"
-              stroke-miterlimit="10"
-              stroke-width="1.4"
+              stroke="lstrokeLinecap9"
+              strokeLinejoin="round"
+              strokeMiterlimit="10"
+              strokeWidth="1.4"
               d="M71.612,33.878	c2.976,0,5.388,2.412,5.388,5.388v27.918c0,1.623-1.316,2.939-2.939,2.939h-7.837V36.8"
             ></path>
             <path

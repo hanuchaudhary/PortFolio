@@ -12,13 +12,13 @@ const Teck = ({title, path }) => {
     >
       <div className="flex flex-col items-center transition-transform">
         <h1
-          className={`relative select-none bg-zinc-600 px-4 border border-zinc-500 mb-3 text-center transition-opacity duration-300 ${
+          className={`relative select-none dark:bg-neutral-600 bg-neutral-300 px-4 border dark:border-neutral-500 mb-3 text-center transition-opacity duration-300 ${
             isVisible ? "opacity-100" : "opacity-0"
           } rounded-md`}
         >
           {title}
           <span
-            className={`absolute left-1/2 transform -translate-x-1/2 -bottom-2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-t-zinc-600 border-l-transparent border-r-transparent ${
+            className={`absolute left-1/2 transform -translate-x-1/2 -bottom-2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-t-neutral-600 border-l-transparent border-r-transparent ${
               isVisible ? "block" : "hidden"
             }`}
           ></span>
