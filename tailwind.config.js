@@ -8,7 +8,7 @@ export default {
     extend: {
       colors:{
         beige : "#FFFCE0",
-        darkBeige : "#0E100F"
+        darkBeige : "#0E100F",
       }
     },
   },

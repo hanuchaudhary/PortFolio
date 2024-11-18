@@ -1,0 +1,49 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Instagram - Social Media App",
+      "image": "https://i.pinimg.com/474x/c7/97/de/c797de8c10869f2d43efe16729b658f1.jpg",
+      "description": "I developed an Instagram Clone, a full-stack web application replicating the core features of Instagram. The project focuses on providing a seamless user experience while incorporating real-time functionalities and modern web technologies",
+      "tags": "React.js, Node.js, Express.js, Socket.IO, Prisma, JSON Web Token, ShadCN, Tailwind CSS, Cloudinary",
+      "liveLink": "x",
+      "githubLink": "https://github.com/hanuchaudhary/instagram"
+    },
+    {
+      "id": 2,
+      "title": "Instagram - Social Media App",
+      "image": "https://i.pinimg.com/474x/c7/97/de/c797de8c10869f2d43efe16729b658f1.jpg",
+      "description": "I developed an Instagram Clone, a full-stack web application replicating the core features of Instagram. The project focuses on providing a seamless user experience while incorporating real-time functionalities and modern web technologies",
+      "tags": "React.js, Node.js, Express.js, Socket.IO, Prisma, JSON Web Token, ShadCN, Tailwind CSS, Cloudinary",
+      "liveLink": "",
+      "githubLink": "https://github.com/hanuchaudhary/instagram"
+    },
+    {
+      "id": 3,
+      "title": "Instagram - Social Media App",
+      "image": "https://i.pinimg.com/474x/c7/97/de/c797de8c10869f2d43efe16729b658f1.jpg",
+      "description": "I developed an Instagram Clone, a full-stack web application replicating the core features of Instagram. The project focuses on providing a seamless user experience while incorporating real-time functionalities and modern web technologies",
+      "tags": "React.js, Node.js, Express.js, Socket.IO, Prisma, JSON Web Token, ShadCN, Tailwind CSS, Cloudinary",
+      "liveLink": "",
+      "githubLink": "https://github.com/hanuchaudhary/instagram"
+    },
+    {
+      "id": 4,
+      "title": "Instagram - Social Media App",
+      "image": "https://i.pinimg.com/474x/c7/97/de/c797de8c10869f2d43efe16729b658f1.jpg",
+      "description": "I developed an Instagram Clone, a full-stack web application replicating the core features of Instagram. The project focuses on providing a seamless user experience while incorporating real-time functionalities and modern web technologies",
+      "tags": "React.js, Node.js, Express.js, Socket.IO, Prisma, JSON Web Token, ShadCN, Tailwind CSS, Cloudinary",
+      "liveLink": "",
+      "githubLink": "https://github.com/hanuchaudhary/instagram"
+    },
+    {
+      "id": 5,
+      "title": "Instagram - Social Media App",
+      "image": "https://i.pinimg.com/474x/c7/97/de/c797de8c10869f2d43efe16729b658f1.jpg",
+      "description": "I developed an Instagram Clone, a full-stack web application replicating the core features of Instagram. The project focuses on providing a seamless user experience while incorporating real-time functionalities and modern web technologies",
+      "tags": "React.js, Node.js, Express.js, Socket.IO, Prisma, JSON Web Token, ShadCN, Tailwind CSS, Cloudinary",
+      "liveLink": "",
+      "githubLink": "https://github.com/hanuchaudhary/instagram"
+    }
+  ]
+}

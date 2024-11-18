@@ -3,7 +3,7 @@ import Button from "./Button";
 
 export default function NavBar() {
   return (
-    <div className="flex fixed  top-4 w-full items-center justify-center">
+    <div className="flex fixed z-[99999] top-4 w-full items-center justify-center">
       <div className="flex shadow-sm border bg-darkBeige bg-opacity-65 backdrop-blur-lg border-stone-800 items-center justify-between rounded-lg bg-background px-2 py-2">
         <div className="flex items-center text-beige gap-20">
           <a href="/" className="flex pl-4 items-center gap-2 font-medium">
@@ -27,7 +27,7 @@ export default function NavBar() {
             {["Projects", "About", "Socials", "Contact"].map((item) => (
               <motion.div
                 key={item}
-                className="px-2 py-1.5 text-stone-600 hover:text-beige transition-colors font-semibold text-base text-foreground/80 hover:text-foreground relative"
+                className="px-2 py-1.5 select-none text-stone-600 hover:text-beige transition-colors font-semibold text-base text-foreground/80 hover:text-foreground relative"
                 whileHover="hover"
                 initial={{ y: -10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
