@@ -11,12 +11,12 @@ export default function NavBar() {
 
   return (
     <div className="flex fixed z-[99999] top-4 w-full items-center justify-center">
-      <div className="flex shadow-sm border dark:bg-darkBeige bg-opacity-65 backdrop-blur-lg border-stone-800 items-center justify-between rounded-lg bg-background px-2 py-2">
-        <div className="flex items-center text-beige gap-20">
-          <Link to="/" className="flex pl-4 items-center gap-2 font-medium">
+      <div className="flex shadow-sm border dark:bg-darkBeige bg-opacity-30 backdrop-blur-xl dark:backdrop-blur-xl dark:bg-opacity-30 md:px-10 border-stone-800 items-center justify-between rounded-lg bg-background px-2 py-2">
+        <div className="flex items-center text-beige gap-10 md:gap-20">
+          <Link to="/" className="flex pl-0  items-center gap-2 font-medium">
             <svg
               viewBox="0 0 24 24"
-              className="h-6 w-6"
+              className="h-6 w-6 md:block hidden"
               stroke="currentColor"
               fill="none"
               strokeWidth="2"
@@ -32,11 +32,11 @@ export default function NavBar() {
               </span>
             </div>
           </Link>
-          <nav className="items-center gap-4 flex">
+          <nav className="items-center md:gap-4 gap-2 flex">
             {["Projects", "About", "Contact"].map((item) => (
               <motion.div
                 key={item}
-                className="px-2 py-1.5 select-none text-stone-600 hover:text-beige transition-colors font-semibold text-base text-foreground/80 hover:text-foreground relative"
+                className="px-2 py-1.5 select-none text-stone-600 hover:text-beige transition-colors font-semibold text-sm md:text-base text-foreground/80 hover:text-foreground relative"
                 whileHover="hover"
                 initial={{ y: -10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}

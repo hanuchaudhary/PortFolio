@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-interface SocialsCardTypes {
+export interface SocialsCardTypes {
   icon: string;
   name: string;
   link: string;
@@ -29,14 +29,14 @@ export default function SocialsCard({ icon, name, link }: SocialsCardTypes) {
       <div>
         <motion.img
           className="md:h-20 h-12 md:w-20 w-12"
-          src={icon}
+          src={`${icon.toLowerCase()}.svg`}
           alt=""
           whileHover={{ scale: 1.2, rotate: -5 }}
           transition={{ type: "spring", stiffness: 260, damping: 20 }}
         />
       </div>
       <motion.h1
-        className="text-xl md:text-3xl font-semibold"
+        className="text-xl capitalize md:text-3xl font-semibold"
         whileHover={{ scale: 1.1 }}
         transition={{ duration: 0.3 }}
       >

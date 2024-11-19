@@ -1,8 +1,39 @@
 import { motion } from "framer-motion";
-import SocialsCard from "../components/SocialsCard";
+import SocialsCard, { SocialsCardTypes } from "../components/SocialsCard";
 
 export default function Contact() {
-  // Animation Variants
+  const data: SocialsCardTypes[] = [
+    {
+      icon: "resume",
+      link: "https://drive.google.com/file/d/1Pz7Oy8zNV5DKGrI9qcJffuBO9qBO_-D3/view?usp=sharing",
+      name: "Resume",
+    },
+    {
+      icon: "github",
+      link: "https://github.com/hanuchaudhary",
+      name: "github",
+    },
+    {
+      icon: "x",
+      link: "https://x.com/KushChaudharyOg",
+      name: "X",
+    },
+    {
+      icon: "Linkedin",
+      link: "https://www.linkedin.com/in/kush-chaudhary-54448628a/",
+      name: "Linkedin",
+    },
+    {
+      icon: "Instagram",
+      link: "https://www.instagram.com/kush.chaudhary.1/",
+      name: "instagram",
+    },
+    {
+      icon: "gmail",
+      link: "mailto:kushchaudharyog@gmail.com",
+      name: "gmail",
+    },
+  ];
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: {
@@ -43,7 +74,6 @@ export default function Contact() {
 
   return (
     <div className="h-screen md:px-20 px-2 bg-darkBeige text-beige pt-40">
-      {/* Heading Animation */}
       <motion.h1
         className="font-bold text-center text-4xl"
         variants={containerVariants}
@@ -62,20 +92,17 @@ export default function Contact() {
         Have a question or want to work together? Feel free to reach out!
       </motion.p>
 
-      {/* Social Cards with Animation */}
       <motion.div
         className="grid grid-cols-2 gap-4 pt-10"
         variants={cardContainerVariants}
         initial="hidden"
         animate="visible"
       >
-        {["Github", "LinkedIn", "Resume", "Instagram", "X", "Gmail"].map(
+        {data.map(
           (social, idx) => (
             <motion.div variants={cardVariants} key={idx}>
               <SocialsCard
-                link=""
-                icon={`/${social.toLowerCase()}.svg`}
-                name={social}
+                {...social}
               />
             </motion.div>
           )
