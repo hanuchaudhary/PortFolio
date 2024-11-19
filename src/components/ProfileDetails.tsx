@@ -1,32 +1,59 @@
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { motion } from "framer-motion";
+
+const TECH_ICONS = [
+  {
+    src: "/nodejs.svg",
+    alt: "Node.js",
+    className: "top-4 left-[15%] w-16 h-16",
+  },
+  {
+    src: "/typescript.svg",
+    alt: "TypeScript",
+    className: "top-52 left-[20%] w-12 h-12",
+  },
+  {
+    src: "/js.svg",
+    alt: "JavaScript",
+    className: "top-56 left-[15%] w-10 h-10",
+  },
+  { src: "/react.svg", alt: "React", className: "top-40 -right-20 w-[500px]" },
+  {
+    src: "/python.svg",
+    alt: "Python",
+    className: "top-20 right-[25%] w-14 h-14",
+  },
+  {
+    src: "/docker.svg",
+    alt: "Docker",
+    className: "bottom-20 left-[10%] w-16 h-16",
+  },
+  { src: "/framer.svg", alt: "AWS", className: "top-32 left-[30%] w-12 h-12" },
+  {
+    src: "/tailwind.svg",
+    alt: "Tailwind",
+    className: "bottom-40 right-[15%] w-10 h-10",
+  },
+  {
+    src: "/nextjs.svg",
+    alt: "Next.js",
+    className: "top-16 right-[40%] w-12 h-12",
+  },
+  {
+    src: "/github.svg",
+    alt: "GraphQL",
+    className: "bottom-24 right-[35%] w-14 h-14",
+  },
+];
 
 function ProfileDetails() {
   const containerRef = useRef<HTMLDivElement>(null);
-  const profileDescRef = useRef<HTMLDivElement>(null);
-
-  const splitTextToWords = (text: string) => {
-    return text.split(" ").map((word, index) => (
-      <span key={index} className="inline-block opacity-0">
-        {word}
-      </span>
-    ));
-  };
 
   useGSAP(
     () => {
       const ctx = gsap.context(() => {
-        const words = profileDescRef.current?.querySelectorAll("span");
-        if (words) {
-          gsap.to(words, {
-            opacity: 1,
-            duration: 0.8,
-            stagger: 0.03,
-            ease: "power1.out",
-          });
-        }
-
         gsap.to(".icon-rotate", {
           rotate: 360,
           duration: 20,
@@ -34,23 +61,34 @@ function ProfileDetails() {
           repeat: -1,
         });
 
-        // Gentle float animation for icons
-        gsap.to(".icon-float", {
-          y: "10px",
-          duration: 2,
-          ease: "power1.inOut",
-          yoyo: true,
-          repeat: -1,
+        const floatingIcons = document.querySelectorAll(".icon-float");
+        floatingIcons.forEach((icon) => {
+          const duration = 2 + Math.random() * 2;
+          const delay = Math.random() * 2;
+
+          gsap.to(icon, {
+            y: "20px",
+            duration,
+            delay,
+            ease: "power1.inOut",
+            yoyo: true,
+            repeat: -1,
+          });
         });
 
-        // Subtle scale pulse for MongoDB logo
-        gsap.to(".mongodb-logo", {
-          scale: 1.05,
-          duration: 2,
-          ease: "power1.inOut",
-          yoyo: true,
-          repeat: -1,
-        });
+        gsap.fromTo(
+          ".mongodb-logo",
+          {
+            scale: 0,
+          },
+          {
+            scale: 1.0,
+            duration: 0.5,
+            delay:0.4,
+            rotateY: 360,
+            ease: "power1.inOut",
+          }
+        );
       }, containerRef);
 
       return () => ctx.revert();
@@ -61,59 +99,61 @@ function ProfileDetails() {
   return (
     <div
       ref={containerRef}
-      className="px-4 md:px-20 relative overflow-hidden pb-20 "
+      className="px-4 md:px-20 h-[70vh] relative pb-20 flex items-center"
     >
-      {/* SVG icons with subtle animations */}
+      {/* Background Tech Icons */}
       <div className="absolute inset-0 overflow-hidden">
-        <img
-          className="absolute top-4 left-[15%] w-16 h-16 opacity-20 icon-float"
-          src="/nodejs.svg"
-          alt="Node.js logo"
-        />
-        <img
-          className="absolute top-52 left-[20%] w-12 h-12 opacity-20 icon-rotate"
-          src="/typescript.svg"
-          alt="TypeScript logo"
-        />
-        <img
-          className="absolute top-56 left-[15%] w-10 h-10 opacity-20 icon-float"
-          src="/js.svg"
-          alt="JavaScript logo"
-        />
-        <img
-          className="absolute top-40 -right-20 w-[500px] opacity-10 icon-rotate"
-          src="/react.svg"
-          alt="React logo"
-        />
+        {TECH_ICONS.map((icon, index) => (
+          <img
+            key={icon.alt}
+            className={`absolute opacity-20 ${icon.className} ${
+              index % 2 === 0 ? "icon-float" : "icon-rotate"
+            } transition-opacity duration-300 hover:opacity-40`}
+            src={icon.src}
+            alt={icon.alt}
+          />
+        ))}
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto pt-20">
-        <div className="space-y-8 flex gap-4">
-          <h1 className="text-6xl md:text-8xl font-bold text-beige tracking-tight">
-            Kush
-          </h1>
-
-          <div className="max-w-2xl">
-            <div
-              ref={profileDescRef}
-              className="text-beige text-lg leading-relaxed"
-            >
-              {splitTextToWords(`Welcome to my world of code, where ideas take shape and problems
-              get solved elegantly. I'm passionate about crafting clean, efficient
-              solutions that make a real impact. From modern frameworks to
-              timeless principles, every project is an opportunity to excel.`)}
+      <div className="relative z-10">
+        <div className="space-y-2">
+          <motion.h1
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="md:text-7xl text-5xl text-beige font-bold"
+          >
+            Full-Stack Wizardry & UI Excellence
+          </motion.h1>
+          <motion.h2
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="md:text-4xl text-xl text-beige font-semibold"
+          >
+            Full Stack Dev, Freelancer & OpenSource Contributor
+          </motion.h2>
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="flex items-center text-beige md:gap-2 mt-8 text-base flex-wrap md:text-2xl font-semibold"
+          >
+            <h1>Hi, I'm </h1>
+            <div className="flex gap-2">
+              <h1 className="tracking-tight">Kush</h1>
+              <div className="flex items-center">
+                <span className="tracking-tight">Ch</span>
+                <img
+                  className="h-5 w-5 mongodb-logo"
+                  src="/mongodb.svg"
+                  alt="MongoDB logo"
+                />
+                <span>udhary, I turn vision into </span>
+              </div>
             </div>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-4 text-6xl md:text-8xl font-bold text-beige tracking-tight">
-          Ch
-          <img
-            className="h-20 w-20 mongodb-logo"
-            src="/mongodb.svg"
-            alt="MongoDB logo"
-          />
-          udhary
+            <h1>reality with code and design.</h1>
+          </motion.div>
         </div>
       </div>
     </div>

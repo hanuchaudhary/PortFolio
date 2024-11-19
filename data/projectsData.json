@@ -2,8 +2,12 @@
   "projects": [
     {
       "id": 1,
-      "title": "Instagram - Social Media App",
-      "image": "https://i.pinimg.com/474x/c7/97/de/c797de8c10869f2d43efe16729b658f1.jpg",
+      "title": "Instagram | Social Media App",
+      "images": [
+        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732019722/akd2uvxwao2pxfx18l9h.png",
+        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732019722/izjk0nfg7qiubb0fibas.png",
+        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732019721/gp4kb8vkbg4wnmvdjv6v.png"
+      ],
       "description": "I developed an Instagram Clone, a full-stack web application replicating the core features of Instagram. The project focuses on providing a seamless user experience while incorporating real-time functionalities and modern web technologies",
       "tags": "React.js, Node.js, Express.js, Socket.IO, Prisma, JSON Web Token, ShadCN, Tailwind CSS, Cloudinary",
       "liveLink": "x",
@@ -11,38 +15,58 @@
     },
     {
       "id": 2,
-      "title": "Instagram - Social Media App",
-      "image": "https://i.pinimg.com/474x/c7/97/de/c797de8c10869f2d43efe16729b658f1.jpg",
+      "title": "Medium | Blog App",
+      "images": [
+        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022622/portfolio/ims2japob3c3mizystk8.png",
+        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022622/portfolio/qeqijqdfyjdmezlzsdz3.png",
+        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022622/portfolio/tvr15t3le77aihhgmdnt.png",
+        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022621/portfolio/hvvmqrsbtblj5p4dsab4.png"
+      ],
       "description": "I developed an Instagram Clone, a full-stack web application replicating the core features of Instagram. The project focuses on providing a seamless user experience while incorporating real-time functionalities and modern web technologies",
       "tags": "React.js, Node.js, Express.js, Socket.IO, Prisma, JSON Web Token, ShadCN, Tailwind CSS, Cloudinary",
-      "liveLink": "",
+      "liveLink": "x",
       "githubLink": "https://github.com/hanuchaudhary/instagram"
     },
     {
       "id": 3,
-      "title": "Instagram - Social Media App",
-      "image": "https://i.pinimg.com/474x/c7/97/de/c797de8c10869f2d43efe16729b658f1.jpg",
+      "title": "Repay | Paytm Wallet Clone App",
+      "images": [
+        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022622/portfolio/yr17lxdkgwpirm067kuq.png",
+        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022622/portfolio/v9ks1g45ff1ckvnazy3s.png",
+        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022622/portfolio/flcwcu7bzffeyabljy9m.png",
+        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022621/portfolio/pmngduod6urqbc3z0ffp.png"
+      ],
       "description": "I developed an Instagram Clone, a full-stack web application replicating the core features of Instagram. The project focuses on providing a seamless user experience while incorporating real-time functionalities and modern web technologies",
       "tags": "React.js, Node.js, Express.js, Socket.IO, Prisma, JSON Web Token, ShadCN, Tailwind CSS, Cloudinary",
-      "liveLink": "",
+      "liveLink": "x",
       "githubLink": "https://github.com/hanuchaudhary/instagram"
     },
     {
       "id": 4,
-      "title": "Instagram - Social Media App",
-      "image": "https://i.pinimg.com/474x/c7/97/de/c797de8c10869f2d43efe16729b658f1.jpg",
+      "title": "CourseApp | Paytm Wallet Clone App",
+      "images": [
+        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022622/portfolio/rhsbiopqtupvr2vg0fno.png",
+        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022622/portfolio/ea2bqvwzjbzqnyjg5h2f.png",
+        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022622/portfolio/bqk8ogitywwfe8gcpzju.png",
+        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022621/portfolio/xt1rpzyghtufyjg1xclo.png"
+      ],
       "description": "I developed an Instagram Clone, a full-stack web application replicating the core features of Instagram. The project focuses on providing a seamless user experience while incorporating real-time functionalities and modern web technologies",
       "tags": "React.js, Node.js, Express.js, Socket.IO, Prisma, JSON Web Token, ShadCN, Tailwind CSS, Cloudinary",
-      "liveLink": "",
+      "liveLink": "x",
       "githubLink": "https://github.com/hanuchaudhary/instagram"
     },
     {
       "id": 5,
-      "title": "Instagram - Social Media App",
-      "image": "https://i.pinimg.com/474x/c7/97/de/c797de8c10869f2d43efe16729b658f1.jpg",
+      "title": "50xOpportunities | Paytm Wallet Clone App",
+      "images": [
+        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022622/portfolio/shid77w93n6lykman0x5.png",
+        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022622/portfolio/zdtc0eu7eh8xmnu1qfp6.png",
+        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022622/portfolio/ifthqkqpxjokgxvpr7ll.png",
+        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022621/portfolio/a7f4puwg6myrirohp5oo.png"
+      ],
       "description": "I developed an Instagram Clone, a full-stack web application replicating the core features of Instagram. The project focuses on providing a seamless user experience while incorporating real-time functionalities and modern web technologies",
       "tags": "React.js, Node.js, Express.js, Socket.IO, Prisma, JSON Web Token, ShadCN, Tailwind CSS, Cloudinary",
-      "liveLink": "",
+      "liveLink": "x",
       "githubLink": "https://github.com/hanuchaudhary/instagram"
     }
   ]

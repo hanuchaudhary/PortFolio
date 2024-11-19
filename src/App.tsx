@@ -1,21 +1,20 @@
-import Footer from "./components/Footer";
-import NavBar from "./components/NavBar";
-import ProfileDetails from "./components/ProfileDetails";
-import ProjectShowcase from "./components/ProjectShowcase";
-import Skills from "./components/Skills/Skills";
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import Projects from "./pages/Projects";
+import ScrollToTop from "./lib/ScrollToTop";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 export default function App() {
   return (
-    <div>
-        <div className="bg-darkBeige selection:bg-[#1D7B2D] overflow-hidden">
-            <NavBar />
-          <div className="pt-40">
-            <ProfileDetails/>
-            <Skills/>
-            <ProjectShowcase/>
-            <Footer/>
-          </div>
-        </div>
-    </div>
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </>
   );
 }
