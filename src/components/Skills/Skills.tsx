@@ -40,8 +40,8 @@ export default function Skills() {
           Skills
         </motion.h1>
 
-        <motion.div  variants={sectionVariants}>
-          <h1 className="text-base text-beige dark:text-gray-200 font-mono mb-3">
+        <motion.div variants={sectionVariants}>
+          <h1 className="text-base text-darkBeige dark:text-beige  font-mono mb-3">
             Languages
           </h1>
           <div className="flex gap-2 flex-wrap">
@@ -52,7 +52,7 @@ export default function Skills() {
         </motion.div>
 
         <motion.div variants={sectionVariants}>
-          <h1 className="text-base text-beige dark:text-gray-200 font-mono mb-3">
+          <h1 className="text-base text-darkBeige dark:text-beige  font-mono mb-3">
             Backend
           </h1>
           <div className="flex gap-2 flex-wrap">
@@ -63,7 +63,7 @@ export default function Skills() {
         </motion.div>
 
         <motion.div variants={sectionVariants}>
-          <h1 className="text-base text-beige dark:text-gray-200 font-mono mb-3">
+          <h1 className="text-base text-darkBeige dark:text-beige  font-mono mb-3">
             Libraries & Frameworks
           </h1>
           <div className="flex gap-2 flex-wrap">
@@ -74,7 +74,7 @@ export default function Skills() {
         </motion.div>
 
         <motion.div variants={sectionVariants}>
-          <h1 className="text-base text-beige dark:text-gray-200 font-mono mb-3">
+          <h1 className="text-base text-darkBeige dark:text-beige  font-mono mb-3">
             Database and ORMs
           </h1>
           <div className="flex gap-2 flex-wrap">
@@ -85,7 +85,7 @@ export default function Skills() {
         </motion.div>
 
         <motion.div variants={sectionVariants}>
-          <h1 className="text-base text-beige dark:text-gray-200 font-mono mb-3">
+          <h1 className="text-base text-darkBeige dark:text-beige  font-mono mb-3">
             Tools and Technologies
           </h1>
           <div className="flex gap-2 flex-wrap">

@@ -9,6 +9,7 @@
   ],
   "frameworks": [
     { "name": "React", "icon": "react" },
+    { "name": "React Native", "icon": "reactNative" },
     { "name": "Nextjs", "icon": "nextjs" },
     { "name": "React Router Dom", "icon": "react-router-dom" },
     { "name": "Recoil", "icon": "postgresql" },
@@ -21,19 +22,20 @@
   "backend": [
     { "name": "NodeJs", "icon": "nodejs" },
     { "name": "ExpressJs", "icon": "expressjs" },
-    { "name": "HonoJs", "icon": "nodejs" },
-    { "name": "SocketJs", "icon": "socketjs" }
+    { "name": "HonoJs", "icon": "hono" },
+    { "name": "Socket.io", "icon": "socketjs" },
+    { "name": "WebSockets", "icon": "websocket" }
   ],
   "database": [
     { "name": "MongoDB", "icon": "mongodb" },
     { "name": "PostgreSQL", "icon": "postgresql" },
     { "name": "Prisma", "icon": "prisma" },
     { "name": "Firebase", "icon": "firebase" },
-    { "name": "SQL", "icon": "socketjs" }
+    { "name": "SQL", "icon": "sql" }
   ],
   "tools": [
-    { "name": "Git", "icon": "git" },
     { "name": "GitHub", "icon": "github" },
+    { "name": "Git", "icon": "git" },
     { "name": "Docker", "icon": "docker" },
     { "name": "Postman", "icon": "postman" },
     { "name": "Redis", "icon": "redis" },
@@ -42,6 +44,7 @@
     { "name": "NPM", "icon": "npm" },
     { "name": "JWT", "icon": "jsonwebtokens" },
     { "name": "Netlify", "icon": "netlify" },
-    { "name": "Vercel", "icon": "vercel" }
+    { "name": "Vercel", "icon": "vercel" },
+    { "name": "Turborepo", "icon": "turborepo" }
   ]
 }

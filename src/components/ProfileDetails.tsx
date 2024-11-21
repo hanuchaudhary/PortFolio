@@ -19,7 +19,7 @@ const TECH_ICONS = [
     alt: "JavaScript",
     className: "top-56 left-[15%] w-10 h-10",
   },
-  { src: "/react.svg", alt: "React", className: "top-40 -right-20 w-[500px]" },
+  { src: "/react.svg", alt: "React", className: "md:top-40 top-56 -right-32 md:-right-20 w-[500px]" },
   {
     src: "/python.svg",
     alt: "Python",
@@ -44,7 +44,7 @@ const TECH_ICONS = [
   {
     src: "/github.svg",
     alt: "GraphQL",
-    className: "bottom-24 right-[35%] w-14 h-14",
+    className: "bottom-24 md:block hidden right-[35%] w-14 h-14",
   },
 ];
 
@@ -141,15 +141,15 @@ function ProfileDetails() {
           >
             <h1>Hi, I'm </h1>
             <div className="flex gap-2">
-              <h1 className="tracking-tight">Kush</h1>
+              <h1 className="tracking-tight text-green-500">Kush</h1>
               <div className="flex items-center">
-                <span className="tracking-tight">Ch</span>
+                <span className="tracking-tight text-green-500" >Ch</span>
                 <img
                   className="h-5 w-5 mongodb-logo"
                   src="/mongodb.svg"
                   alt="MongoDB logo"
                 />
-                <span>udhary, I turn vision into </span>
+                <span><span className="text-green-500">audhary</span>, I turn vision into </span>
               </div>
             </div>
             <h1>reality with code and design.</h1>
