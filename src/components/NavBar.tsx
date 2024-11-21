@@ -11,8 +11,8 @@ export default function NavBar() {
 
   return (
     <div className="flex fixed z-[99999] top-4 w-full items-center justify-center">
-      <div className="flex shadow-sm border dark:bg-darkBeige bg-opacity-30 backdrop-blur-xl dark:backdrop-blur-xl dark:bg-opacity-30 md:px-10 border-stone-800 items-center justify-between rounded-lg bg-background px-2 py-2">
-        <div className="flex items-center text-beige gap-10 md:gap-20">
+      <div className="flex shadow-sm border dark:bg-darkBeige/30 bg-white/70 backdrop-blur-xl dark:backdrop-blur-xl md:px-10 dark:border-stone-800/50 border-stone-200/90 items-center justify-between rounded-lg bg-background px-2 py-2">
+        <div className="flex items-center dark:text-beige gap-10 md:gap-20">
           <Link to="/" className="flex pl-0  items-center gap-2 font-medium">
             <svg
               viewBox="0 0 24 24"
@@ -27,7 +27,7 @@ export default function NavBar() {
             </svg>
             <div className="flex flex-col gap-0">
               <span className="leading-none">Kush</span>
-              <span className="leading-none text-xs text-stone-500">
+              <span className="leading-none text-xs dark:text-stone-500 text-stone-900">
                 Chaudhary.
               </span>
             </div>
@@ -36,7 +36,7 @@ export default function NavBar() {
             {["Projects", "About", "Contact"].map((item) => (
               <motion.div
                 key={item}
-                className="px-2 py-1.5 select-none text-stone-600 hover:text-beige transition-colors font-semibold text-sm md:text-base text-foreground/80 hover:text-foreground relative"
+                className="px-2 py-1.5 select-none text-stone-800 dark:text-stone-500 dark:hover:text-beige hover:text-beige transition-colors font-semibold text-sm md:text-base text-foreground/80 hover:text-foreground relative"
                 whileHover="hover"
                 initial={{ y: -10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}

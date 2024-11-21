@@ -84,7 +84,7 @@ function ProfileDetails() {
           {
             scale: 1.0,
             duration: 0.5,
-            delay:0.4,
+            delay: 0.4,
             rotateY: 360,
             ease: "power1.inOut",
           }
@@ -101,7 +101,6 @@ function ProfileDetails() {
       ref={containerRef}
       className="px-4 md:px-20 h-[70vh] relative pb-20 flex items-center"
     >
-      {/* Background Tech Icons */}
       <div className="absolute inset-0 overflow-hidden">
         {TECH_ICONS.map((icon, index) => (
           <img
@@ -121,15 +120,16 @@ function ProfileDetails() {
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="md:text-7xl text-5xl text-beige font-bold"
+            className="md:text-7xl text-5xl dark:text-beige text-darkBeige font-bold"
           >
-            Full-Stack Wizardry & UI Excellence
+            <span className="text-green-600">Full-Stack </span>
+            Wizardry & UI Excellence
           </motion.h1>
           <motion.h2
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="md:text-4xl text-xl text-beige font-semibold"
+            className="md:text-4xl text-xl dark:text-beige/70 text-neutral-700 font-semibold"
           >
             Full Stack Dev, Freelancer & OpenSource Contributor
           </motion.h2>
@@ -137,7 +137,7 @@ function ProfileDetails() {
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex items-center text-beige md:gap-2 mt-8 text-base flex-wrap md:text-2xl font-semibold"
+            className="flex items-center dark:text-beige  md:gap-2 mt-8 text-base flex-wrap md:text-2xl font-semibold"
           >
             <h1>Hi, I'm </h1>
             <div className="flex gap-2">

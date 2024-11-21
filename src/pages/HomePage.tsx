@@ -5,7 +5,7 @@ import Skills from "../components/Skills/Skills";
 export default function HomePage() {
   return (
     <div>
-      <div className="bg-darkBeige pt-40 selection:bg-[#1D7B2D] overflow-hidden">
+      <div className="dark:bg-darkBeige transition-colors duration-300 bg-white pt-40 selection:bg-[#1D7B2D] overflow-hidden">
         <ProfileDetails />
         <Skills />
         <ProjectShowcase />

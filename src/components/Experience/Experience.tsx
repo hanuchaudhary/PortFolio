@@ -29,7 +29,7 @@ export default function Experience() {
   ];
   return (
     <div className="pt-32 pb-10">
-      <h1 className="text-5xl text-beige font-bold ">Education</h1>
+      <h1 className="text-5xl dark:text-beige font-bold ">Education</h1>
       <div className="w-full pt-10">
         {data.map((e, idx) => (
           <div key={idx} className="py-10">

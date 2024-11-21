@@ -41,9 +41,9 @@ export default function Projects() {
   };
 
   return (
-    <div className="bg-darkBeige h-full w-full md:px-20 px-2 py-4">
+    <div className="dark:bg-darkBeige bg-white h-full w-full md:px-20 px-2 pb-10 pt-10 md:pt-20">
       <motion.h1
-        className="text-4xl text-beige font-bold py-10"
+        className="text-4xl dark:text-beige text-darkBeige font-bold py-10"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -51,7 +51,7 @@ export default function Projects() {
         Projects
       </motion.h1>
       <motion.div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
+        className="grid grid-cols-1 md:grid-cols-2 gap-4"
         variants={gridVariants}
         initial="hidden"
         animate="visible"

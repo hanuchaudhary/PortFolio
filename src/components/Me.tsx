@@ -13,7 +13,7 @@ export default function Me() {
         >
           <img className="h-full w-full object-cover" src="/me.jpg" alt="me" />
         </motion.div>
-        <div className="text-beige text-center md:text-left">
+        <div className="dark:text-beige text-center md:text-left">
           <motion.h1
             initial={{ y: 100 }}
             animate={{ y: 0 }}

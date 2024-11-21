@@ -11,7 +11,7 @@ export default function SocialsCard({ icon, name, link }: SocialsCardTypes) {
     <motion.a
       href={link}
       target="_blank"
-      className="flex justify-between md:p-4 p-2 items-center rounded-2xl dark:bg-white dark:text-black text-beige bg-[#333333]"
+      className="flex justify-between md:p-4 p-2 items-center dark:hover:bg-neutral-100 rounded-2xl transition-colors duration-300 dark:bg-white dark:text-black text-beige  bg-darkBeige"
       initial={{ y: 50, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       whileHover={{

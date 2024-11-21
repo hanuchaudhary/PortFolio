@@ -31,11 +31,11 @@ export default function Skills() {
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
         variants={containerVariants}
-        className="md:mx-5 mx-2 flex border border-[#222222] flex-col gap-4 py-4 px-2 md:px-10 bg-black rounded-xl shadow-md dark:bg-black dark:border-[#222222] dark:bg-opacity-10 dark:backdrop-blur-xl"
+        className="md:mx-5 mx-2 flex border transition-colors duration-300 dark:border-[#222222] flex-col gap-4 py-4 px-2 md:px-10 bg-stone-100/50 rounded-xl shadow-md dark:bg-darkBeige/50 border-stone-200 dark:backdrop-blur-xl"
       >
         <motion.h1
           variants={sectionVariants}
-          className="text-5xl md:py-10 py-4 font-bold text-beige dark:text-gray-100"
+          className="text-5xl md:py-10 py-4 font-bold dark:text-beige text-darkBeige"
         >
           Skills
         </motion.h1>

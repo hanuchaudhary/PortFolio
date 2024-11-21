@@ -73,7 +73,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="h-screen md:px-20 px-2 bg-darkBeige text-beige pt-40">
+    <div className="h-screen md:px-20 px-2 dark:bg-darkBeige  dark:text-beige pt-40">
       <motion.h1
         className="font-bold text-center text-4xl"
         variants={containerVariants}
@@ -98,15 +98,11 @@ export default function Contact() {
         initial="hidden"
         animate="visible"
       >
-        {data.map(
-          (social, idx) => (
-            <motion.div variants={cardVariants} key={idx}>
-              <SocialsCard
-                {...social}
-              />
-            </motion.div>
-          )
-        )}
+        {data.map((social, idx) => (
+          <motion.div variants={cardVariants} key={idx}>
+            <SocialsCard {...social} />
+          </motion.div>
+        ))}
       </motion.div>
     </div>
   );
