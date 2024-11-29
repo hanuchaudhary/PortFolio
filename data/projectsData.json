@@ -14,32 +14,16 @@
       "githubLink": "https://github.com/hanuchaudhary/instagram"
     },
     {
-      "id": 2,
-      "title": "Medium | Blog App",
+      "id": 6,
+      "title": "Anonymous Comments | Feedback App",
       "images": [
-        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022622/portfolio/ims2japob3c3mizystk8.png",
-        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022622/portfolio/qeqijqdfyjdmezlzsdz3.png",
-        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022622/portfolio/tvr15t3le77aihhgmdnt.png",
-        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022621/portfolio/hvvmqrsbtblj5p4dsab4.png"
+        "https://res.cloudinary.com/diihvllmt/image/upload/v1732899570/anony/nahnwepikzgbwrypmqdq.png",
+        "https://res.cloudinary.com/diihvllmt/image/upload/v1732899570/anony/tvooupq8ngtdbythvp3i.png"
       ],
-      "description": "Developed a web application inspired by Medium for users to create, publish and read blog posts. Implemented frontend using React.js, TypeScript, and Tailwind CSS for styling.Utilized Cloudflare Workers for the backend, integrating Zod for data validation and Prisma for database operations with PostgreSQL.",
-      "tags": "React, HonoJs, Cloudflare workers, Zod, TypeScript, Prisma(ORM), PostgreSQL, JsonWebToken, Markdown Editor",
-      "liveLink": "https://medium-blog-6pkc.vercel.app/",
-      "githubLink": "https://github.com/hanuchaudhary/medium-blog"
-    },
-    {
-      "id": 3,
-      "title": "Repay | Paytm Wallet Clone",
-      "images": [
-        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022622/portfolio/yr17lxdkgwpirm067kuq.png",
-        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022622/portfolio/v9ks1g45ff1ckvnazy3s.png",
-        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022622/portfolio/flcwcu7bzffeyabljy9m.png",
-        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022621/portfolio/pmngduod6urqbc3z0ffp.png"
-      ],
-      "description": "Implemented user authentication and authorization using HonoJs and postgreSQl, with input validation using Zod.Ensured data integrity through atomic transactions and session management in MongoDB, track transactions as well. Enabled user search for seamless money transfers, with an intuitive React frontend styled using Tailwind CSS.",
-      "tags": "React.js, Node.js, Express.js, Socket.IO, Prisma, JSON Web Token, ShadCN, Tailwind CSS, Cloudinary",
-      "liveLink": "https://repay-three.vercel.app/",
-      "githubLink": "https://github.com/hanuchaudhary/paytm-react"
+      "description": "{ Anonymous Comments } | A platform where users, creators, or anyone can receive honest and valuable feedback on their ideas, work, or products — all while maintaining the sender's anonymity. The best part? The identity of the person providing the feedback remains completely hidden, fostering a safe and open environment for constructive criticism and suggestions.",
+      "tags": "TypeScript, NextJs, MongoDB, TailwindCSS/ShadcnUI,Resend(Email Auth),Gemini(AI suggested Messages)",
+      "liveLink": "https://anonymous-comments.vercel.app/",
+      "githubLink": "https://github.com/hanuchaudhary/anonymous-comments"
     },
     {
       "id": 4,
@@ -68,6 +52,34 @@
       "tags": "TypeScript, React(Frontend), Prisma(ORM), TailwindCSS/ShadcnUI/AcertinityUI, PostgreSQL(Database),",
       "liveLink": "https://50x0pportunities.vercel.app/jobs",
       "githubLink": "https://github.com/hanuchaudhary/50x0pportunities"
+    },
+    {
+      "id": 2,
+      "title": "Medium | Blog App",
+      "images": [
+        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022622/portfolio/ims2japob3c3mizystk8.png",
+        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022622/portfolio/qeqijqdfyjdmezlzsdz3.png",
+        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022622/portfolio/tvr15t3le77aihhgmdnt.png",
+        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022621/portfolio/hvvmqrsbtblj5p4dsab4.png"
+      ],
+      "description": "Developed a web application inspired by Medium for users to create, publish and read blog posts. Implemented frontend using React.js, TypeScript, and Tailwind CSS for styling.Utilized Cloudflare Workers for the backend, integrating Zod for data validation and Prisma for database operations with PostgreSQL.",
+      "tags": "React, HonoJs, Cloudflare workers, Zod, TypeScript, Prisma(ORM), PostgreSQL, JsonWebToken, Markdown Editor",
+      "liveLink": "https://medium-blog-6pkc.vercel.app/",
+      "githubLink": "https://github.com/hanuchaudhary/medium-blog"
+    },
+    {
+      "id": 3,
+      "title": "Repay | Paytm Wallet Clone",
+      "images": [
+        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022622/portfolio/v9ks1g45ff1ckvnazy3s.png",
+        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022622/portfolio/yr17lxdkgwpirm067kuq.png",
+        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022622/portfolio/flcwcu7bzffeyabljy9m.png",
+        "https://res.cloudinary.com/da7huzv0t/image/upload/v1732022621/portfolio/pmngduod6urqbc3z0ffp.png"
+      ],
+      "description": "Implemented user authentication and authorization using HonoJs and postgreSQl, with input validation using Zod.Ensured data integrity through atomic transactions and session management in MongoDB, track transactions as well. Enabled user search for seamless money transfers, with an intuitive React frontend styled using Tailwind CSS.",
+      "tags": "React.js, Node.js, Express.js, Socket.IO, Prisma, JSON Web Token, ShadCN, Tailwind CSS, Cloudinary",
+      "liveLink": "https://repay-three.vercel.app/",
+      "githubLink": "https://github.com/hanuchaudhary/paytm-react"
     }
   ]
 }

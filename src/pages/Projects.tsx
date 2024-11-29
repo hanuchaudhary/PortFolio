@@ -48,7 +48,7 @@ export default function Projects() {
         initial="hidden"
         animate="visible"
       >
-        Projects
+        All Projects
       </motion.h1>
       <motion.div
         className="grid grid-cols-1 md:grid-cols-2 gap-4"

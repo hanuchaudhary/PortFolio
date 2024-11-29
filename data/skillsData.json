@@ -43,6 +43,8 @@
     { "name": "Yarn", "icon": "yarn" },
     { "name": "NPM", "icon": "npm" },
     { "name": "JWT", "icon": "jsonwebtokens" },
+    { "name": "RecoilJs", "icon": "recoil" },
+    { "name": "Zustand", "icon": "zustand" },
     { "name": "Netlify", "icon": "netlify" },
     { "name": "Vercel", "icon": "vercel" },
     { "name": "Turborepo", "icon": "turborepo" }
