@@ -39,13 +39,13 @@ export default function ImagesCarousel({wallpapers}:{wallpapers :  string[]}) {
         <div className="absolute inset-0 flex justify-between items-center px-4">
           <button
             onClick={handlePrev}
-            className="bg-stone-800 cursor-pointer text-white p-2 rounded-full"
+            className="bg-stone-800/30 shadow-md backdrop-blur-md cursor-pointer text-white p-2 rounded-full"
           >
             <ArrowLeft size={24} />
           </button>
           <button
             onClick={handleNext}
-            className="bg-stone-800 cursor-pointer text-white p-2 rounded-full"
+            className="bg-stone-800/30 shadow-md backdrop-blur-md cursor-pointer text-white p-2 rounded-full"
           >
             <ArrowRight size={24} />
           </button>

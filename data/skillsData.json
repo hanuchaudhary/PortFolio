@@ -12,7 +12,7 @@
     { "name": "React Native", "icon": "reactNative" },
     { "name": "Nextjs", "icon": "nextjs" },
     { "name": "React Router Dom", "icon": "react-router-dom" },
-    { "name": "Recoil", "icon": "postgresql" },
+    { "name": "Recoil", "icon": "recoil" },
     { "name": "MUI", "icon": "material-ui" },
     { "name": "Tailwind Css", "icon": "tailwind" },
     { "name": "Bootstrap", "icon": "bootstrap" },

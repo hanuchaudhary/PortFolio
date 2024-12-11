@@ -43,15 +43,23 @@ export default function Projects() {
   return (
     <div className="dark:bg-darkBeige bg-white h-full w-full md:px-20 px-2 pb-10 pt-10 md:pt-20">
       <motion.h1
-        className="text-4xl dark:text-beige text-darkBeige font-bold py-10"
+        className="text-4xl dark:text-beige text-darkBeige font-bold  "
         variants={containerVariants}
         initial="hidden"
         animate="visible"
       >
-        All Projects
+        Projects
       </motion.h1>
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 gap-4"
+        className="text-base dark:text-neutral-400 text-[#777777] mb-10"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        Explore my recent works and projects
+      </motion.div>
+      <motion.div
+        className="grid grid-cols-1 md:grid-cols-2 gap-5"
         variants={gridVariants}
         initial="hidden"
         animate="visible"
