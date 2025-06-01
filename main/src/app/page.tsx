@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { EnhancedThemeToggle } from "./components/ThemeToggle";
+import Projects from "./components/Projects";
 
 export default function page() {
   return (
@@ -40,14 +41,7 @@ export default function page() {
           </div>
         </div>
       </section>
-      <div>
-        <h1 className="text-2xl font-semibold mt-8">About Me</h1>
-        <p className="text-neutral-400 mt-4">
-          I am a software engineer with a passion for open source and
-          contributing to the community. I love learning new technologies and
-          building cool projects.
-        </p>
-      </div>
+      <Projects />
     </main>
   );
 }
