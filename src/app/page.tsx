@@ -1,103 +1,97 @@
+import { DotBg } from "@/components/DotBg";
+import { FooterLinks } from "@/components/FooterLinks";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="relative text-black flex h-screen flex-col items-center justify-between py-24">
+      <div className="absolute inset-0">
+        <DotBg />
+      </div>
+      <div className="flex items-center justify-between flex-col mx-auto relative z-10 h-full w-full text-center select-none">
+        <div className="flex flex-col items-center justify-center w-full">
+          <h1 className="font-gloria text-center md:text-3xl text-xl max-w-md ">
+            Hey Hey Kush Chaudharys Dev Den, Come Build Something Awesome :)
+          </h1>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+        <div className="w-[70%] grid md:grid-cols-4 grid-cols-2 gap-4 mt-10 font-farro">
+          <div className="box flex flex-col items-center justify-center gap-4">
+            <div className="image-wrapper">
+              <Image
+                height={80}
+                width={80}
+                src="/images/image.png"
+                alt="Kush Chaudhary"
+                className="rounded-full"
+              />
+            </div>
+            <button className="button text-sm bg-[#E6E6E6] px-6 py-2 text-black rounded-full cursor-pointer">
+              CrosspostHub
+            </button>
+          </div>
+          <div className="box flex flex-col items-center justify-center gap-4">
+            <div className="image-wrapper">
+              <Image
+                height={80}
+                width={80}
+                src="/images/image.png"
+                alt="Kush Chaudhary"
+                className="rounded-full"
+              />
+            </div>
+            <button className="button text-sm bg-[#E6E6E6] px-6 py-2 text-black rounded-full cursor-pointer">
+              Voxer
+            </button>
+          </div>
+          <div className="box flex flex-col items-center justify-center gap-4">
+            <div className="image-wrapper">
+              <Image
+                height={80}
+                width={80}
+                src="/images/image.png"
+                alt="Kush Chaudhary"
+                className="rounded-full"
+              />
+            </div>
+            <button className="button text-sm bg-[#E6E6E6] px-6 py-2 text-black rounded-full cursor-pointer">
+              Lumora
+            </button>
+          </div>
+          <div className="box flex flex-col items-center justify-center gap-4">
+            <div className="image-wrapper">
+              <Image
+                height={80}
+                width={80}
+                src="/images/me.png"
+                alt="Kush Chaudhary"
+                style={{
+                  objectFit: "cover",
+                  stroke: "blue",
+                  strokeWidth: "10px",
+                }}
+                className="rounded-full bg-[#E6E6E6] h-32 w-32  object-contain stroke-1 stroke-white"
+              />
+            </div>
+            <button className="button text-sm shadow-2xs bg-[#E6E6E6] px-6 py-2 text-black rounded-full cursor-pointer">
+              Kush
+            </button>
+          </div>
+        </div>
+
+        <div className=" max-w-lg mx-auto text-[15px] ">
+          <p className="font-farro text-center text-neutral-600 leading-5">
+            Yo, I’m Kush Chaudhary – a Full-Stack Developer who thrives on
+            turning ideas into slick, functional apps. I’ve got a knack for both
+            front-end flair and back-end grit, and I’m currently cooking up
+            projects like CrossPostHub, Voxer, and Deployer101. From social
+            media tools to video transcoding and deployment magic, I’m here to
+            make the web work better. Let’s create something epic together!
+          </p>
+
+          <FooterLinks />
+        </div>
+      </div>
     </div>
   );
 }
