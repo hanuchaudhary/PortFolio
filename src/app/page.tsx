@@ -1,5 +1,7 @@
 import { DotBg } from "@/components/DotBg";
 import { FooterLinks } from "@/components/FooterLinks";
+import { CrossPostHub } from "@/components/Projects/Crossposthub";
+import {User} from "@/components/Projects/User";
 import Image from "next/image";
 
 export default function Home() {
@@ -15,29 +17,16 @@ export default function Home() {
           </h1>
         </div>
 
-        <div className="w-[70%] grid md:grid-cols-4 grid-cols-2 gap-4 mt-10 font-farro">
+        <div className="w-[60%] grid md:grid-cols-4 grid-cols-2 gap-4 mt-10 font-farro">
+          <CrossPostHub />
           <div className="box flex flex-col items-center justify-center gap-4">
-            <div className="image-wrapper">
+            <div className="image-wrapper h-32 w-32">
               <Image
                 height={80}
                 width={80}
                 src="/images/image.png"
                 alt="Kush Chaudhary"
-                className="rounded-full"
-              />
-            </div>
-            <button className="button text-sm bg-[#E6E6E6] px-6 py-2 text-black rounded-full cursor-pointer">
-              CrosspostHub
-            </button>
-          </div>
-          <div className="box flex flex-col items-center justify-center gap-4">
-            <div className="image-wrapper">
-              <Image
-                height={80}
-                width={80}
-                src="/images/image.png"
-                alt="Kush Chaudhary"
-                className="rounded-full"
+                className="rounded-full h-full w-full"
               />
             </div>
             <button className="button text-sm bg-[#E6E6E6] px-6 py-2 text-black rounded-full cursor-pointer">
@@ -45,38 +34,20 @@ export default function Home() {
             </button>
           </div>
           <div className="box flex flex-col items-center justify-center gap-4">
-            <div className="image-wrapper">
+            <div className="image-wrapper h-32 w-32">
               <Image
                 height={80}
                 width={80}
                 src="/images/image.png"
                 alt="Kush Chaudhary"
-                className="rounded-full"
+                className="rounded-full h-full w-full"
               />
             </div>
             <button className="button text-sm bg-[#E6E6E6] px-6 py-2 text-black rounded-full cursor-pointer">
               Lumora
             </button>
           </div>
-          <div className="box flex flex-col items-center justify-center gap-4">
-            <div className="image-wrapper">
-              <Image
-                height={80}
-                width={80}
-                src="/images/me.png"
-                alt="Kush Chaudhary"
-                style={{
-                  objectFit: "cover",
-                  stroke: "blue",
-                  strokeWidth: "10px",
-                }}
-                className="rounded-full bg-[#E6E6E6] h-32 w-32  object-contain stroke-1 stroke-white"
-              />
-            </div>
-            <button className="button text-sm shadow-2xs bg-[#E6E6E6] px-6 py-2 text-black rounded-full cursor-pointer">
-              Kush
-            </button>
-          </div>
+          <User />
         </div>
 
         <div className=" max-w-lg mx-auto text-[15px] ">

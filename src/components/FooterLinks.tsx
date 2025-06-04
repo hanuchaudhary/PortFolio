@@ -4,7 +4,7 @@ import React from "react";
 import { AnimatePresence, motion } from "motion/react";
 
 export function FooterLinks() {
-  const [isOpen, setIsOpen] = React.useState<boolean>(true);
+  const [isOpen, setIsOpen] = React.useState<boolean>(false);
 
   const links: { name: string; link: string; icon: string }[] = [
     {
@@ -25,7 +25,7 @@ export function FooterLinks() {
   ];
 
   return (
-    <div className="flex items-center justify-center text-black font-farro fixed bottom-10 w-full left-1/2 -translate-x-1/2">
+    <div className="flex items-center justify-center text-black font-farro fixed z-[100] bottom-5 w-full left-1/2 -translate-x-1/2">
       <AnimatePresence>
         <motion.div
           layout
