@@ -16,7 +16,7 @@ export function User() {
       <div
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        className="box flex flex-col items-center justify-center gap-4"
+        className="box flex flex-col items-center justify-center gap-4 cursor-pointer"
       >
         {isHovered && (
           <div className="fixed inset-0 h-full w-full bg-white/20 backdrop-blur-sm pointer-events-none" />
@@ -26,15 +26,15 @@ export function User() {
             isHovered && setIsActive(true);
           }}
           animate={{
-            y: isHovered ? -120 : 1,
-            scale: isHovered ? 3 : 1,
+            y: isHovered ? -80 : 1,
+            scale: isHovered ? 2.2 : 1,
             rotate: isHovered ? 0 : 10,
           }}
           style={{
             backgroundColor: isHovered ? "transparent" : "#E6E6E6",
           }}
           className={cn(
-            "image-wrapper relative rounded-full bg-[#E6E6E6] h-40 w-40 overflow-hidden",
+            "image-wrapper relative rounded-full bg-[#E6E6E6] h-32 w-32 overflow-hidden",
             isHovered ? "mask-b-from-[75%] rounded-none" : ""
           )}
         >
@@ -64,7 +64,7 @@ export function User() {
                   animate={{ opacity: 1, y: 0, scale: 1.1, rotate: 50 }}
                   src="/images/dumbell.png"
                   alt="icon"
-                  className="absolute z-10 bottom-0 left-2 h-10"
+                  className="absolute z-10 bottom-0 left-0 h-10"
                 />
                 <motion.img
                   initial={{
@@ -80,19 +80,20 @@ export function User() {
                   transition={{ delay: 0.1 }}
                   src="/images/emoji.png"
                   alt="icon"
-                  className="absolute z-10 bottom-0 right-2 h-10"
+                  className="absolute z-10 bottom-0 right-0 h-10"
                 />
                 <motion.img
                   initial={{
                     opacity: 0,
                     y: 20,
                     scale: 0.7,
-                    rotate: -5,
+                    rotate: -20,
                   }}
-                  animate={{ opacity: 1, y: 0, scale: 2, rotate: 30 }}
+                  animate={{ opacity: 1, y: 0, scale: 2, rotate: 30, }}
+                  transition={{ delay: 0.1 }}
                   src="/images/callout.png"
                   alt="icon"
-                  className="absolute z-10 top-10 right-7 h-10"
+                  className="absolute z-10 top-8 right-4 h-10"
                 />
               </>
             )}
@@ -101,8 +102,8 @@ export function User() {
         {isHovered && (
           <motion.p
             onClick={() => setIsActive(true)}
-            initial={{ opacity: 0, y: 20, scale: 0.7 }}
-            animate={{ opacity: 1, y: 40, scale: 1.1, rotate: -5 }}
+            initial={{ opacity: 0, y: 0, scale: 0.7 }}
+            animate={{ opacity: 1, y: 0, scale: 1.1, rotate: -5 }}
             className="font-gloria text-center max-w-md font-semibold "
           >
             Design is my bread and butter. Each idea deserves a unique design
@@ -111,9 +112,9 @@ export function User() {
         )}
         <motion.button
           onClick={() => setIsActive(true)}
-          initial={{ y: 20 }}
+          initial={{ y: 0 }}
           animate={{
-            y: isHovered ? 40 : 0,
+            y: isHovered ? 10 : 0,
             transition: {
               duration: 0.3,
               ease: "easeInOut",
