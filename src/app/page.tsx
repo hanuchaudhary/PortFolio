@@ -1,8 +1,6 @@
 import { DotBg } from "@/components/DotBg";
 import { FooterLinks } from "@/components/FooterLinks";
-import { CrossPostHub } from "@/components/Projects/Crossposthub";
-import {User} from "@/components/Projects/User";
-import Image from "next/image";
+import { User } from "@/components/Projects/User";
 
 export default function Home() {
   return (
@@ -16,55 +14,20 @@ export default function Home() {
             Hey Hey Kush Chaudharys Dev Den, Come Build Something Awesome :)
           </h1>
         </div>
+        <User />
+      </div>
 
-        <div className="w-[60%] grid md:grid-cols-4 grid-cols-2 gap-4 mt-10 font-farro">
-          {/* <CrossPostHub />
-          <div className="box flex flex-col items-center justify-center gap-4">
-            <div className="image-wrapper h-32 w-32">
-              <Image
-                height={80}
-                width={80}
-                src="/images/image.png"
-                alt="Kush Chaudhary"
-                className="rounded-full h-full w-full"
-              />
-            </div>
-            <button className="button text-sm bg-[#E6E6E6] px-6 py-2 text-black rounded-full cursor-pointer">
-              Voxer
-            </button>
-          </div>
-          <div className="box flex flex-col items-center justify-center gap-4">
-            <div className="image-wrapper h-32 w-32">
-              <Image
-                height={80}
-                width={80}
-                src="/images/image.png"
-                alt="Kush Chaudhary"
-                className="rounded-full h-full w-full"
-              />
-            </div>
-            <button className="button text-sm bg-[#E6E6E6] px-6 py-2 text-black rounded-full cursor-pointer">
-              Lumora
-            </button>
-          </div> */}
-          <User />
-          <User />
-          <User />
-          <User />
-        </div>
+      <div className=" max-w-lg mx-auto text-[15px] ">
+        <p className="font-farro text-center text-neutral-600 leading-5">
+          Yo, I’m Kush Chaudhary – a Full-Stack Developer who thrives on turning
+          ideas into slick, functional apps. I’ve got a knack for both front-end
+          flair and back-end grit, and I’m currently cooking up projects like
+          CrossPostHub, Voxer, and Deployer101. From social media tools to video
+          transcoding and deployment magic, I’m here to make the web work
+          better. Let’s create something epic together!
+        </p>
 
-        <div className=" max-w-lg mx-auto text-[15px] ">
-          <p className="font-farro text-center text-neutral-600 leading-5">
-            Yo, I’m Kush Chaudhary – a Full-Stack Developer who thrives on
-            turning ideas into slick, functional apps. I’ve got a knack for both
-            front-end flair and back-end grit, and I’m currently cooking up
-            projects like CrossPostHub, Voxer, and Deployer101. From social
-            media tools to video transcoding and deployment magic, I’m here to
-            make the web work better. Let’s create something epic together!
-          </p>
-
-          <FooterLinks />
-        </div>
+        <FooterLinks />
       </div>
     </div>
   );
