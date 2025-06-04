@@ -18,7 +18,7 @@ export default function Home() {
         </div>
 
         <div className="w-[60%] grid md:grid-cols-4 grid-cols-2 gap-4 mt-10 font-farro">
-          <CrossPostHub />
+          {/* <CrossPostHub />
           <div className="box flex flex-col items-center justify-center gap-4">
             <div className="image-wrapper h-32 w-32">
               <Image
@@ -46,7 +46,10 @@ export default function Home() {
             <button className="button text-sm bg-[#E6E6E6] px-6 py-2 text-black rounded-full cursor-pointer">
               Lumora
             </button>
-          </div>
+          </div> */}
+          <User />
+          <User />
+          <User />
           <User />
         </div>
 

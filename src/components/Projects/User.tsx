@@ -10,7 +10,7 @@ import { Safari } from "../safari";
 
 export function User() {
   const [isActive, setIsActive] = React.useState(false);
-  const [isHovered, setIsHovered] = React.useState(true);
+  const [isHovered, setIsHovered] = React.useState(false);
   return (
     <>
       <div
@@ -27,7 +27,7 @@ export function User() {
           }}
           animate={{
             y: isHovered ? -120 : 1,
-            scale: isHovered ? 4 : 1,
+            scale: isHovered ? 3 : 1,
             rotate: isHovered ? 0 : 10,
           }}
           style={{
