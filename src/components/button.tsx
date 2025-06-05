@@ -31,7 +31,7 @@ export function Button({
         
       }}
       className={cn(
-        "border-t border border-r transition-colors cursor-pointer rounded-full px-8 py-2 md:text-base text-sm font-farro",
+        "border-t border border-r transition-colors cursor-pointer rounded-full px-8 py-3 md:text-sm text-xs font-farro",
         `hover:bg-[${backgroundColor}]/90`
       )}
     >
