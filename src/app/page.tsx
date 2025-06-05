@@ -1,6 +1,6 @@
 import { DotBg } from "@/components/DotBg";
 import { FooterLinks } from "@/components/FooterLinks";
-import { User } from "@/components/Projects/User";
+import { User } from "@/components/User";
 
 export default async function Home() {
   return (

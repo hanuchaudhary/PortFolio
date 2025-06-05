@@ -7,6 +7,7 @@ interface buttonProps {
   borderColor: string;
   backgroundColor: string;
   color: string;
+  href?: string;
 }
 
 export function Button({
@@ -14,10 +15,14 @@ export function Button({
   backgroundColor,
   borderColor,
   boxShadow,
+  href,
   color,
 }: buttonProps) {
   return (
-    <button
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
       style={{
         boxShadow,
         borderColor,
@@ -31,6 +36,6 @@ export function Button({
       )}
     >
       {children}
-    </button>
+    </a>
   );
 }

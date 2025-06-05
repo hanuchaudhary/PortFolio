@@ -2,6 +2,8 @@
 import Image from "next/image";
 import React from "react";
 import { AnimatePresence, motion } from "motion/react";
+import { IconX } from "@tabler/icons-react";
+import { cn } from "@/lib/utils";
 
 export function FooterLinks() {
   const [isOpen, setIsOpen] = React.useState<boolean>(false);
@@ -57,29 +59,38 @@ export function FooterLinks() {
           }}
           onMouseEnter={() => setIsOpen(true)}
           onMouseLeave={() => setIsOpen(false)}
-          className="min-h-7 px-4 flex flex-col items-center justify-center gap-4 bg-[#E6E6E6] rounded-full cursor-pointer shadow-2xs"
+          className={cn(isOpen && "md:pt-0 pt-8", "min-h-7 px-4 flex flex-col items-center reltive justify-center gap-4 bg-[#E6E6E6]/70 backdrop-blur-xl rounded-full cursor-pointer shadow-2xs")}
         >
+
           {isOpen && (
-            <motion.div className="flex items-center gap-4 px-16 pt-6">
-              {links.map((link, index) => (
-                <a
-                  href={link.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  key={index}
-                  className="flex items-center flex-col"
-                >
-                  <Image
-                    src={link.icon}
-                    alt={`${link.name} icon`}
-                    className="h-10 w-10"
-                    height={40}
-                    width={40}
-                  />
-                  <span className="text-sm font-farro mt-1.5">{link.name}</span>
-                </a>
-              ))}
-            </motion.div>
+            <>
+              <div
+                onClick={() => setIsOpen(false)}
+                className="flex items-center justify-center md:hidden block h-8 w-8 bg-neutral-100 text-muted-foreground transform-colors duration-200 rounded-full cursor-pointer absolute top-8 right-8"
+              >
+                <IconX className="md:h-8 md:w-8 h-6 w-6 " />
+              </div>
+              <motion.div className="flex items-center gap-4 px-16 pt-6">
+                {links.map((link, index) => (
+                  <a
+                    href={link.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    key={index}
+                    className="flex items-center flex-col"
+                  >
+                    <Image
+                      src={link.icon}
+                      alt={`${link.name} icon`}
+                      className="h-10 w-10"
+                      height={40}
+                      width={40}
+                    />
+                    <span className="text-sm font-farro mt-1.5">{link.name}</span>
+                  </a>
+                ))}
+              </motion.div>
+            </>
           )}
           <div className="flex items-center justify-center gap-3">
             {isOpen ? (

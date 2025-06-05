@@ -1,18 +1,61 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { cn } from "@/utils/utils";
-import { Button } from "../button";
-import Iphone15Pro from "../iphone-15-pro";
-import { Safari } from "../safari";
+import { Button } from "./button";
+import Iphone15Pro from "./iphone-15-pro";
 import { IconX } from "@tabler/icons-react";
-import { TextAnimate } from "../BlurText";
+import { TextAnimate } from "./BlurText";
+import { MacbookPro } from "./macbook-pro";
+import { ChevronRightIcon } from "./ui/chevron-right";
+import { ChevronLeftIcon } from "./ui/chevron-left";
+
+const projects = [
+  {
+    title: "CrosspostHub",
+    description:
+      "A SaaS platform for seamless cross-posting across multiple social media platforms. It includes AI-generated captions, post scheduling, media management, and payment integration.",
+    mobileImage: "/images/cphMobile.png",
+    desktopImage: "/images/cph.png",
+  },
+  {
+    title: "Voxer",
+    description:
+      "A system for transcoding videos from any source to any format and quality.",
+    mobileImage: "/images/portMobile.png",
+    desktopImage: "/images/port.png",
+  },
+  {
+    title: "Lumora",
+    description:
+      "A platform for converting large duration youtube videos to viral shorts.",
+    mobileImage: "/images/cphLight.png",
+    desktopImage: "/images/cphLight.png",
+  },
+];
 
 export function User() {
   const [isActive, setIsActive] = React.useState(false);
   const [isHovered, setIsHovered] = React.useState(true);
+  const [currentProject, setCurrentProject] = React.useState(0);
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
+
+  const resetTimer = () => {
+    // if (timerRef.current) clearInterval(timerRef.current);
+    // timerRef.current = setInterval(() => {
+    //   setCurrentProject((prev) => (prev + 1) % projects.length);
+    // }, 2000);
+  };
+
+  // useEffect(() => {
+  //   resetTimer();
+  //   return () => {
+  //     if (timerRef.current) clearInterval(timerRef.current);
+  //   };
+  // }, []);
+
   return (
     <>
       <div
@@ -109,7 +152,7 @@ export function User() {
             className="font-gloria text-center md:max-w-md max-w-xs font-semibold "
           >
             Design is my bread and butter. Each idea deserves a unique design
-            solution, and I’m here to help you with that.
+            solution, and I'm here to help you with that.
           </motion.p>
         )}
         <motion.button
@@ -155,7 +198,7 @@ export function User() {
             >
               <IconX className="md:h-8 md:w-8 h-6 w-6 " />
             </div>
-            <div className="flex flex-col items-center max-w-4xl mx-auto ">
+            <div className="flex flex-col items-center mx-auto ">
               <img
                 className="rounded-full w-64 object-cover mb-4 mask-b-from-[65%]"
                 height={100}
@@ -177,6 +220,7 @@ export function User() {
               </TextAnimate>
               <div className="flex items-center justify-center gap-4">
                 <Button
+                  href="mailto:kushchaudharyog@gmail.com"
                   backgroundColor="#3578F7"
                   borderColor="#295EC0"
                   boxShadow="rgb(140, 194, 255) 0px .4px 0px .4px inset"
@@ -185,6 +229,7 @@ export function User() {
                   Reach out
                 </Button>
                 <Button
+                  href="https://cal.com/kushchaudhary/15min"
                   backgroundColor="#E2E2E2"
                   borderColor="#E2E2E2"
                   boxShadow="rgb(245, 246, 247) 0px .4px 0px .4px inset"
@@ -193,12 +238,77 @@ export function User() {
                   Book a Call
                 </Button>
               </div>
-              <div className="mx-auto flex items-center justify-center p-4 gap-10 mt-14">
-                <Iphone15Pro className="size-1/4" src="/images/cphMobile.png" />
-                <Safari
-                  className="size-3/4 scale-105 rounded-xl"
-                  imageSrc="/images/cph.png"
-                />
+              <div className="mx-auto flex relative items-center justify-center p-4 md:gap-10 mt-14">
+                {/* <div className="absolute inset-0 pointer-events-none blur-[100px] z-[-1] opacity-50">
+                  <img
+                  style={{
+                    objectFit: "cover",
+                    filter: "blur(100px)",
+                    objectPosition: "center",
+                  }}
+                  className="w-full h-full"
+                  src={projects[currentProject].mobileImage}
+                  alt=""
+                  />
+                </div> */}
+
+                <button
+                  aria-label="Previous Project"
+                  className="cursor-pointer relative"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setCurrentProject(
+                      (prev) => (prev - 1 + projects.length) % projects.length
+                    );
+                    resetTimer();
+                  }}
+                >
+                  <ChevronLeftIcon />
+                </button>
+                <div className="flex relative flex-col items-center my-20 justify-center gap-6">
+                  <div
+                    key={currentProject}
+                    className="flex md:flex-row flex-col-reverse items-center gap-10"
+                  >
+                    <Iphone15Pro
+                      currentTime={new Date().toLocaleTimeString("en-US", {
+                        hour: "2-digit",
+                        minute: "2-digit",
+                      })}
+                      className="md:size-[30%] size-[45%]"
+                      src={projects[currentProject].mobileImage}
+                    />
+                    <MacbookPro
+                      className="size-full rounded-xl"
+                      src={projects[currentProject].desktopImage}
+                    />
+                  </div>
+                  <div className="flex flex-col gap-1 items-center md:max-w-2xl">
+                    <TextAnimate
+                      className="font-bold text-lg"
+                      animation="blurIn"
+                    >
+                      {projects[currentProject].title}
+                    </TextAnimate>
+                    <TextAnimate
+                      className="text-neutral-600"
+                      animation="blurIn"
+                    >
+                      {projects[currentProject].description}
+                    </TextAnimate>
+                  </div>
+                </div>
+                <button
+                  aria-label="Next Project"
+                  className="cursor-pointer relative"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setCurrentProject((prev) => (prev + 1) % projects.length);
+                    resetTimer();
+                  }}
+                >
+                  <ChevronRightIcon />
+                </button>
               </div>
             </div>
             <div className="max-w-2xl mx-auto">
@@ -212,15 +322,14 @@ export function User() {
                 </div>
                 <div className="">
                   <p className="md:text-3xl text-xl md:w-96 text-center mx-auto pb-4">
-                    Let’s build something awesome together
+                    Let's build something awesome together
                   </p>
                   <p className="text-sm max-w-md text-center mx-auto pb-4">
                     I'm excited to hear about what you're building. Reach out
                     below to get the ball rolling, and potentially build
                     something really special together.
                   </p>
-                  <div>
-                  </div>
+                  <div></div>
                 </div>
               </div>
             </div>

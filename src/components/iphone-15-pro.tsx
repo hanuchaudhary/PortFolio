@@ -1,3 +1,4 @@
+import { AnimatePresence, motion } from "motion/react";
 import { SVGProps } from "react";
 
 export interface Iphone15ProProps extends SVGProps<SVGSVGElement> {
@@ -5,6 +6,7 @@ export interface Iphone15ProProps extends SVGProps<SVGSVGElement> {
   height?: number;
   src?: string;
   videoSrc?: string;
+  currentTime?: string;
 }
 
 export default function Iphone15Pro({
@@ -12,6 +14,7 @@ export default function Iphone15Pro({
   height = 882,
   src,
   videoSrc,
+  currentTime = "12:34",
   ...props
 }: Iphone15ProProps) {
   return (
@@ -54,22 +57,28 @@ export default function Iphone15Pro({
       />
       <path
         d="M21.25 75C21.25 44.2101 46.2101 19.25 77 19.25H355C385.79 19.25 410.75 44.2101 410.75 75V807C410.75 837.79 385.79 862.75 355 862.75H77C46.2101 862.75 21.25 837.79 21.25 807V75Z"
-        className="stroke-[0.5] fill-[#404040] stroke-[#404040]"
+        className="stroke-[0.5] fill-[#000] stroke-[#404040]"
       />
 
-      {src && (
-        <image
-          href={src}
-          x="21.25"
-          y="19.25"
-          width="389.5"
-          height="843.5"
-          preserveAspectRatio="xMidYMid slice"
-          clipPath="url(#roundedCorners)"
-        />
-      )}
+      <AnimatePresence mode="wait">
+        {src && (
+          <motion.image
+            initial={{ opacity: 0, filter: "blur(8px)" }}
+            animate={{ opacity: 1, filter: "blur(0px)" }}
+            exit={{ opacity: 0, filter: "blur(8px)" }}
+            transition={{ duration: 0.5 }}
+            href={src}
+            x="21.25"
+            y="75"
+            width="389.5"
+            height="787.75"
+            preserveAspectRatio="xMidYMid meet"
+            clipPath="url(#roundedCorners)"
+          />
+        )}
+      </AnimatePresence>
       {videoSrc && (
-        <foreignObject x="21.25" y="19.25" width="389.5" height="843.5">
+        <foreignObject x="21.25" y="75" width="389.5" height="787.75">
           <video
             className="size-full overflow-hidden rounded-[55.75px] object-cover"
             src={videoSrc}
@@ -80,6 +89,22 @@ export default function Iphone15Pro({
           />
         </foreignObject>
       )}
+      {/* iOS-style status bar overlay */}
+      <g>
+        {/* Time */}
+        <text x="55" y="58" fontSize="16" fontFamily="SF Pro, Arial, sans-serif" fill="#fff" fontWeight="bold">
+          {currentTime || "12:34"}
+        </text>
+        <g>
+          <rect x="340" y="52" width="3" height="7" rx="1" fill="#fff" />
+          <rect x="345" y="49" width="3" height="10" rx="1" fill="#fff" />
+          <rect x="350" y="46" width="3" height="13" rx="1" fill="#fff" />
+        </g>
+        <g>
+          <rect x="360" y="49" width="22" height="11" rx="3.5" fill="none" stroke="#dadada" stroke-width="1.5" />
+          <rect x="363" y="52" width="16" height="5" rx="2" fill="#fff" />
+        </g>
+      </g>
       <path
         d="M154 48.5C154 38.2827 162.283 30 172.5 30H259.5C269.717 30 278 38.2827 278 48.5C278 58.7173 269.717 67 259.5 67H172.5C162.283 67 154 58.7173 154 48.5Z"
         className="fill-[#262626]"
