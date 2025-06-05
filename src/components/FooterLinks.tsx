@@ -14,12 +14,12 @@ export function FooterLinks() {
     },
     {
       name: "LinkedIn",
-      link: "https://www.linkedin.com/in/hanuchaudhary/",
+      link: "https://www.linkedin.com/in/kush-chaudhary-54448628a/",
       icon: "/svgs/linkedinIcon.svg",
     },
     {
       name: "Twitter(X)",
-      link: "https://twitter.com/hanuchaudhary",
+      link: "https://x.com/KushChaudharyOg",
       icon: "/svgs/xIcon.svg",
     },
   ];
@@ -60,36 +60,37 @@ export function FooterLinks() {
           className="min-h-7 px-4 flex flex-col items-center justify-center gap-4 bg-[#E6E6E6] rounded-full cursor-pointer shadow-2xs"
         >
           {isOpen && (
-            <motion.div
-              className="flex items-center gap-4 px-16 pt-6"
-            >
+            <motion.div className="flex items-center gap-4 px-16 pt-6">
               {links.map((link, index) => (
-            <motion.div 
-              key={index} 
-              className="flex items-center flex-col"
-            >
-              <Image
-                src={link.icon}
-                alt={`${link.name} icon`}
-                className="h-10 w-10"
-                height={40}
-                width={40}
-              />
-              <span className="text-sm font-farro mt-1.5">{link.name}</span>
-            </motion.div>
+                <a
+                  href={link.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  key={index}
+                  className="flex items-center flex-col"
+                >
+                  <Image
+                    src={link.icon}
+                    alt={`${link.name} icon`}
+                    className="h-10 w-10"
+                    height={40}
+                    width={40}
+                  />
+                  <span className="text-sm font-farro mt-1.5">{link.name}</span>
+                </a>
               ))}
             </motion.div>
           )}
           <div className="flex items-center justify-center gap-3">
             {isOpen ? (
               <span className="text-xs text-center w-full mb-4 text-neutral-500">
-            All right reserved
+                All right reserved
               </span>
             ) : (
               <div className="flex items-center gap-2">
-            <div className="dot h-1.5 w-1.5 bg-neutral-500 rounded-full"></div>
-            <div className="dot h-1.5 w-1.5 bg-neutral-500 rounded-full"></div>
-            <div className="dot h-1.5 w-1.5 bg-neutral-500 rounded-full"></div>
+                <div className="dot h-1.5 w-1.5 bg-neutral-500 rounded-full"></div>
+                <div className="dot h-1.5 w-1.5 bg-neutral-500 rounded-full"></div>
+                <div className="dot h-1.5 w-1.5 bg-neutral-500 rounded-full"></div>
               </div>
             )}
           </div>
