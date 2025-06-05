@@ -101,7 +101,7 @@ export default function Iphone15Pro({
           <rect x="350" y="46" width="3" height="13" rx="1" fill="#fff" />
         </g>
         <g>
-          <rect x="360" y="49" width="22" height="11" rx="3.5" fill="none" stroke="#dadada" stroke-width="1.5" />
+          <rect x="360" y="49" width="22" height="11" rx="3.5" fill="none" stroke="#dadada" strokeWidth="1.5" />
           <rect x="363" y="52" width="16" height="5" rx="2" fill="#fff" />
         </g>
       </g>

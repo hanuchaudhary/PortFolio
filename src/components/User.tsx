@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { cn } from "@/utils/utils";
@@ -16,21 +15,21 @@ const projects = [
   {
     title: "CrosspostHub",
     description:
-      "A SaaS platform for seamless cross-posting across multiple social media platforms. It includes AI-generated captions, post scheduling, media management, and payment integration.",
+      "A SaaS platform for seamless cross-posting across multiple social media platforms. It includes AI-generated captions, post scheduling, and media management.",
     mobileImage: "/images/cphMobile.png",
     desktopImage: "/images/cph.png",
   },
   {
     title: "Voxer",
     description:
-      "A system for transcoding videos from any source to any format and quality.",
+      "A system for transcoding videos from any source to any format and quality. Built for high-performance video processing and conversion.",
     mobileImage: "/images/portMobile.png",
     desktopImage: "/images/port.png",
   },
   {
     title: "Lumora",
     description:
-      "A platform for converting large duration youtube videos to viral shorts.",
+      "A platform for converting large duration youtube videos to viral shorts. Automated editing with AI-powered content extraction and optimization.",
     mobileImage: "/images/cphLight.png",
     desktopImage: "/images/cphLight.png",
   },
@@ -43,18 +42,18 @@ export function User() {
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
   const resetTimer = () => {
-    // if (timerRef.current) clearInterval(timerRef.current);
-    // timerRef.current = setInterval(() => {
-    //   setCurrentProject((prev) => (prev + 1) % projects.length);
-    // }, 2000);
+    if (timerRef.current) clearInterval(timerRef.current);
+    timerRef.current = setInterval(() => {
+      setCurrentProject((prev) => (prev + 1) % projects.length);
+    }, 4000);
   };
 
-  // useEffect(() => {
-  //   resetTimer();
-  //   return () => {
-  //     if (timerRef.current) clearInterval(timerRef.current);
-  //   };
-  // }, []);
+  useEffect(() => {
+    resetTimer();
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
+  }, []);
 
   return (
     <>
@@ -92,7 +91,7 @@ export function User() {
             }}
             height={80}
             width={80}
-            src="/images/me.png"
+            src="https://res.cloudinary.com/da7huzv0t/image/upload/w_1200,q_auto,f_auto/v1749126074/Picsart_25-06-04_08-43-03-630_ynzri0.png"
             alt="KushChaudhary"
             className="object-contain scale-120 h-full w-full relative z-20"
           />
@@ -204,7 +203,7 @@ export function User() {
                 height={100}
                 width={100}
                 alt="image"
-                src={"/images/me.png"}
+                src={"https://res.cloudinary.com/da7huzv0t/image/upload/w_1200,q_auto,f_auto/v1749126074/Picsart_25-06-04_08-43-03-630_ynzri0.png"}
               />
               <TextAnimate
                 className="md:text-xl mb-8 max-w-xl font-[500] md:leading-7 leading-5 "
@@ -283,20 +282,14 @@ export function User() {
                       src={projects[currentProject].desktopImage}
                     />
                   </div>
-                  <div className="flex flex-col gap-1 items-center md:max-w-2xl">
-                    <TextAnimate
-                      className="font-bold text-lg"
-                      animation="blurIn"
-                    >
-                      {projects[currentProject].title}
-                    </TextAnimate>
-                    <TextAnimate
-                      className="text-neutral-600"
-                      animation="blurIn"
-                    >
-                      {projects[currentProject].description}
-                    </TextAnimate>
-                  </div>
+                  <motion.div
+                    initial={{ opacity: 0, filter: "blur(10px)", y: 20 }}
+                    animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                    className="flex flex-col gap-1 items-center md:max-w-2xl text-muted-foreground font-semibold mt-8"
+                  >
+                    {projects[currentProject].title} {"| "}
+                    {projects[currentProject].description}
+                  </motion.div>
                 </div>
                 <button
                   aria-label="Next Project"
